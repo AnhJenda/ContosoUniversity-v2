@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ContosoUniversity_v2.Data;
 using ContosoUniversity_v2.Models;
-using Microsoft.Data.SqlClient;
 
 namespace ContosoUniversity_v2.Controllers
 {
@@ -21,49 +20,11 @@ namespace ContosoUniversity_v2.Controllers
         }
 
         // GET: Students
-        public async Task<IActionResult> Index(
-        string sortOrder,
-        string currentFilter,
-        string searchString,
-        int? pageNumber)
+        public async Task<IActionResult> Index()
         {
-            ViewData["CurrentSort"] = sortOrder;
-            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
-            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
-
-            if (searchString != null)
-            {
-                pageNumber = 1;
-            }
-            else
-            {
-                searchString = currentFilter;
-            }
-            ViewData["CurrentFilter"] = searchString;
-            var students = from s in _context.Student
-                           select s;
-            if (!String.IsNullOrEmpty(searchString))
-            {
-                students = students.Where(s => s.LastName.Contains(searchString)
-                                       || s.FirstMidName.Contains(searchString));
-            }
-            switch (sortOrder)
-            {
-                case "name_desc":
-                    students = students.OrderByDescending(s => s.LastName);
-                    break;
-                case "Date":
-                    students = students.OrderBy(s => s.EnrollmentDate);
-                    break;
-                case "date_desc":
-                    students = students.OrderByDescending(s => s.EnrollmentDate);
-                    break;
-                default:
-                    students = students.OrderBy(s => s.LastName);
-                    break;
-            }
-            int pageSize = 3;
-            return View(await PaginatedList<Student>.CreateAsync(students.AsNoTracking(), pageNumber ?? 1, pageSize));
+              return _context.Student != null ? 
+                          View(await _context.Student.ToListAsync()) :
+                          Problem("Entity set 'ContosoUniversity_v2Context.Student'  is null.");
         }
 
         // GET: Students/Details/5
@@ -95,7 +56,7 @@ namespace ContosoUniversity_v2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,LastName,FirstMidName,EnrollmentDate")] Student student)
+        public async Task<IActionResult> Create([Bind("ID,LastName,FirstMidName,EnrollmentDate")] Student student)
         {
             if (ModelState.IsValid)
             {
@@ -182,7 +143,7 @@ namespace ContosoUniversity_v2.Controllers
         {
             if (_context.Student == null)
             {
-                return Problem("Entity set 'ContosoUniversity_v2Context.Student'  is null.");
+                return Problem("Entity set 'SchoolContext.Student'  is null.");
             }
             var student = await _context.Student.FindAsync(id);
             if (student != null)

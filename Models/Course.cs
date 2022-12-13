@@ -1,4 +1,4 @@
-﻿
+﻿using ContosoUniversity_v2.Models;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -19,8 +19,8 @@ namespace ContosoUniversity_v2.Models
 
         public int DepartmentID { get; set; }
 
-        public Department Department { get; set; }
-        public ICollection<Enrollment> Enrollments { get; set; }
-        public ICollection<CourseAssignment> CourseAssignments { get; set; }
+        public Department? Department { get; set; }
+        public ICollection<Enrollment>? Enrollments { get; set; }
+        public ICollection<CourseAssignment>? CourseAssignments { get; set; }
     }
 }

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ContosoUniversityv2.Migrations
 {
     [DbContext(typeof(ContosoUniversity_v2Context))]
-    [Migration("20221213010637_Init")]
-    partial class Init
+    [Migration("20221213113059_modifyCourse")]
+    partial class modifyCourse
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

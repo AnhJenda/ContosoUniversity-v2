@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ContosoUniversityv2.Migrations
 {
     /// <inheritdoc />
-    public partial class Init : Migration
+    public partial class modifyCourse : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
