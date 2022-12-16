@@ -32,8 +32,6 @@ C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\obj\Debug\
 C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\Azure.Identity.dll
 C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\Humanizer.dll
-C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\MessagePack.dll
-C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\MessagePack.Annotations.dll
 C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\Microsoft.Build.dll
@@ -71,7 +69,6 @@ C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\
 C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
 C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
-C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\Microsoft.VisualStudio.Debugger.Contracts.dll
 C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
 C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
@@ -275,3 +272,4 @@ C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\
 C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\obj\Debug\net7.0\ContosoUniversity-v2.csproj.CopyComplete
+C:\Users\Admin\source\repos\ContosoUniversity-v2\ContosoUniversity-v2\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
